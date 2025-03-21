@@ -28,7 +28,7 @@ class Queue:
         self.length += 1
         return True
 
-    def dequeue(self, value):
+    def dequeue(self):
         if self.length == 0:
             return None
         temp = self.first
@@ -40,6 +40,10 @@ class Queue:
             temp.next = None
         self.length -= 1
         return temp
+
+        
+
+
 
 
  
